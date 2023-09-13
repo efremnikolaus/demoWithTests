@@ -1,5 +1,5 @@
-alter table users drop is_deleted;
-alter table users add if not exists is_deleted boolean;
-alter table users add if not exists gender varchar;
-alter table users drop is_deleted;
-alter table users add if not exists is_deleted boolean;
+ALTER TABLE users DROP is_deleted;
+ALTER TABLE users ADD IF NOT EXISTS is_deleted BOOLEAN;
+ALTER TABLE users ADD IF NOT EXISTS gender VARCHAR;
+ALTER TABLE users DROP is_deleted;
+ALTER TABLE users ADD IF NOT EXISTS is_deleted BOOLEAN;
