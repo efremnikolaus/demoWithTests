@@ -29,6 +29,7 @@ public class EmployeeReadDto {
 
     public Set<AddressDto> addresses = new HashSet<>();
 
+    //todo: dfhgjkdfhg Jira - 5544
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     @Schema(description = "Date response")
     public Date date = Date.from(Instant.now());

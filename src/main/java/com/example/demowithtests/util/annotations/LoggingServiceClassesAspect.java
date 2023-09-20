@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
+import java.util.Arrays;
 import java.util.Collection;
 
 import static com.example.demowithtests.util.annotations.LogColorConstants.ANSI_BLUE;
@@ -22,7 +23,7 @@ public class LoggingServiceClassesAspect {
 
     private LocalDateTime start;
 
-    @Pointcut("execution(public * com.example.demowithtests.service.EmployeeServiceBean.*(..))")
+    @Pointcut("execution(public * com.example.demowithtests.service.*(..))")
     public void callAtMyServicesPublicMethods() {
     }
 
